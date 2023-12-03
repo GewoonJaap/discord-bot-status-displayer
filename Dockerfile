@@ -19,7 +19,6 @@ RUN yarn build
 # Copy and run
 FROM base AS runner
 
-COPY .env .
 COPY --from=builder /usr/app/dist ./dist
 
 CMD yarn dockerStart
