@@ -10,7 +10,7 @@
     "build": "yarn lint && tsc -p tsconfig.json",
     "build:docker": "docker build -t grow-a-tree .",
     "start": "node dist/index.js",
-    "dockerStart": "yarn build && yarn start",
+    "dockerStart": "yarn start",
     "dev": "yarn build && yarn start"
   },
   "author": "GewoonJaap",
